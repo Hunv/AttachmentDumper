@@ -56,7 +56,7 @@ namespace AttachmentDumper
 
         private void LoadSettings()
         {
-            var sR = new System.IO.StreamReader(AppDomain.CurrentDomain.BaseDirectory + "\\config.cfg");
+            var sR = new System.IO.StreamReader(AppDomain.CurrentDomain.BaseDirectory + "\\config.cfg", Encoding.Default);
             ConfigurationSet cfg = null;
 
             while(sR.Peek() >= 0)
